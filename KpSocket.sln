@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KpSocket", "KpSocket\KpSocket.csproj", "{6066C9DA-0F4E-4C33-BBD7-1DAFFE525A31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSvr", "TestSvr\TestSvr.csproj", "{CA1648FD-77A4-4332-B237-EA94D169B35F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCli", "TestCli\TestCli.csproj", "{B4B6FC6F-07DD-44A0-BF34-5FC33644FB26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6066C9DA-0F4E-4C33-BBD7-1DAFFE525A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6066C9DA-0F4E-4C33-BBD7-1DAFFE525A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6066C9DA-0F4E-4C33-BBD7-1DAFFE525A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1648FD-77A4-4332-B237-EA94D169B35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1648FD-77A4-4332-B237-EA94D169B35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1648FD-77A4-4332-B237-EA94D169B35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1648FD-77A4-4332-B237-EA94D169B35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B6FC6F-07DD-44A0-BF34-5FC33644FB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B6FC6F-07DD-44A0-BF34-5FC33644FB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B6FC6F-07DD-44A0-BF34-5FC33644FB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B6FC6F-07DD-44A0-BF34-5FC33644FB26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
