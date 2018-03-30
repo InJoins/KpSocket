@@ -40,7 +40,7 @@ namespace TestSvr
                     Count = buffer.Length,
                     Offset = 0
                 };
-                reader.Read(buffer, 0, buffer.Length);
+                stream.Read(buffer, 0, buffer.Length);
                 stream.Flush();
                 session.TrySend(msg);
                 session.Flush();
