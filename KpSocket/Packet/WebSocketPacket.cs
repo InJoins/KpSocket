@@ -45,10 +45,29 @@ namespace KpSocket.Packet
                 byte[] maskingKey = null;
 
                 if (payLength == 126)
-                    payLength = reader.ReadUInt16().SwapUInt16();
-
+                {
+                    if ((stream.Length - stream.Position) >= 2)
+                    {
+                        payLength = reader.ReadUInt16().SwapUInt16();
+                    }
+                    else
+                    {
+                        stream.Position = nowPosition;
+                        return (message = null) != null;
+                    }
+                }
                 else if (payLength == 127)
-                    payLength = (int)reader.ReadUInt64().SwapUInt64();
+                {
+                    if ((stream.Length - stream.Position) >= 8)
+                    {
+                        payLength = (int)reader.ReadUInt64().SwapUInt64();
+                    }
+                    else
+                    {
+                        stream.Position = nowPosition;
+                        return (message = null) != null;
+                    }
+                }
 
                 if (payLength > MaxPacketLength)
                 {
